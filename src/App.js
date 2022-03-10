@@ -12,7 +12,8 @@ import {useStateValue} from './components/StateProvider'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 function App() {
-  const [{user}, dispatch]= useStateValue()
+const [{user}, dispatch]= useStateValue()
+  //const [ dispatch]= useStateValue()
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser)=>{
@@ -23,7 +24,7 @@ function App() {
         })
       }
     })
-   }, [])
+   },[])
   
 
   return (

@@ -18,7 +18,7 @@ export default function ListProducts() {
       <Grid container spacing={2}>
       {DataProduct.map((item)=>(
           <Grid item xs={12} sm={6} md={4} lg={3}>
-            <Products key={item.id} product={item} />
+            <Products key={item.key} product={item} />
           </Grid>
       
       ))}

@@ -1,7 +1,8 @@
 export const initialState={
     basket:[],
     user: null,
-    shippingData: {}
+    shippingData: {},
+    paymentMessage:"",
 }
 
 export const actionTypes={
@@ -9,15 +10,14 @@ export const actionTypes={
     REMOVE_ITEM:"REMOVE_ITEM",
     SET_USER: "SET_USER",
     EMPTY_BASKET:"EMPTY_BASKET",
-    SET_SHIPPINGDATA:"SET_SHIPPINGDATA"
+    SET_SHIPPINGDATA:"SET_SHIPPINGDATA",
+    SET_PAYMENTMESSAGE:"SET_PAYMENTMESSAGE"
 }
 
 export const getBasketTotal = (basket) =>
     basket.map(el=>parseInt(el.price)).reduce((prev, curr)=>prev + curr,0)
 
 const reducer=(state, action)=>{
-    console.log(action);
-
     switch (action.type) {
         case "ADD_TO_BASKET":
             return{
@@ -51,6 +51,11 @@ const reducer=(state, action)=>{
             return{
                 ...state,
                 shippingData: action.shippingData
+            }
+        case "SET_PAYMENTMESSAGE":
+            return{
+                ...state,
+                paymentMessage: action.paymentMessage,
             }
 
     } 

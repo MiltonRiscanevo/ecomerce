@@ -1,15 +1,18 @@
 import {Button } from '@material-ui/core'
-import {Link} from 'react-router-dom'
 import {Elements, CardElement, useStripe, useElements} from '@stripe/react-stripe-js'
 import {useStateValue} from "../StateProvider"
-import {getBasketTotal} from "../../reducer"
+import {actionTypes, getBasketTotal} from "../../reducer"
 import accounting from "accounting"
 import axios from 'axios'
+import { useState } from 'react'
+import { CircularProgress } from '@material-ui/core'
+import { useEffect } from 'react'
 
 const CheckoutForm = ({nextStep, backStep}) => {
-    const [{basket} , dispatch] = useStateValue()
+    const [{basket, paymentMessage} , dispatch] = useStateValue()
     const stripe = useStripe()
     const elements = useElements()
+    const [loading, setLoading] = useState(false)
 
     const handleSubmit= async(e) => {
         e.preventDefault()
@@ -17,20 +20,37 @@ const CheckoutForm = ({nextStep, backStep}) => {
             type:"card",
             card: elements.getElement(CardElement)
         })
+        
+        setLoading(true)               
+        
         if (!error) {
             const {id} = paymentMethod
+
             try {
                 const {data} =await axios.post(
-                    "http://localhost:3001/api/checkout",
+                    "http://localhost:3001/api/tok_us/checkout",
                 {
                     id,
                     amount:getBasketTotal(basket) * 100,
                 })
-                console.log(data)
+                dispatch({
+                    type: actionTypes.SET_PAYMENTMESSAGE,
+                    paymentMessage: data.message
+                })
+                if (data.message === "succesfull payment") {
+                    dispatch({
+                        type:actionTypes.EMPTY_BASKET,
+                        basket:[]
+                    })
+                } 
+                elements.getElement(CardElement).clear()
+                nextStep()
             } catch (error) {
                 console.log(error)
+                nextStep()
             }
         }
+        setLoading(false)
     }
 
     return (
@@ -41,7 +61,7 @@ const CheckoutForm = ({nextStep, backStep}) => {
                 Back
             </Button>
             <Button disabled={false} type="submit" variant= 'contained'  color="primary">
-            {`pay ${accounting.formatMoney(getBasketTotal(basket))}`}
+            {loading ?(<CircularProgress/>) :(`pay ${accounting.formatMoney(getBasketTotal(basket))}`) }
             </Button>
         </div>
         

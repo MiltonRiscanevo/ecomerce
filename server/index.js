@@ -12,10 +12,8 @@ const PORT = 3001
 app.use(cors({origin: "http://localhost:3000"}))
 app.use(express.json())
 
-app.post("/api/checkout", async(req,res) =>{
+app.post("/api/tok_us/checkout", async(req,res) =>{
     console.log(req.body)
-    res.send("Ok quedo pagado")
-
     const {id,amount}=req.body
 
     try {
@@ -23,15 +21,15 @@ app.post("/api/checkout", async(req,res) =>{
             amount,
             currency:"usd",
             description: "payment of products",
-            payment_method_types: [
-                "card"
-                ],
-
-        })
+            payment_method: id,
+            confirm:true           
+        }
+        )
+        
         console.log(payment)
-        res.status(200).json({message:"succesfull payment"})
+        return res.status(200).json({message:"succesfull payment"})
     } catch (error) {
-        console.log(error)
+    return res.json({message: error.raw.message})        
     }
 })
 
