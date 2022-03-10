@@ -1,27 +1,27 @@
 [
     {
         "id":1,
-        "title": "shoes",
-        "productType":"Running Shoes",
-        "price":"50",
-        "rating":1,
-        "image":"https://brand.assets.adidas.com/image/upload/f_auto,fl_lossy,q_1/esCO/Images/originals_ss19_yung96_april_tease_clp_item_brown_woutbg_dt_tcm195-334931.png",
-        "description":"Adidas run serie format slow, geniales para aquellos que desean recorrer distancias largas"
+        "title": "Audifonos Gamer",
+        "productType":"Audifonos Gamer",
+        "price":"160000",
+        "rating":5,
+        "image":"https://quintoelementosas.com/138-large_default/audifonos-gammer-g200-kotion-each.jpg",
+        "description":"Audifonos gamer importados, relacion de voz dual, surround."
     },
     {
         "id":2,
-        "title": "shoes",
-        "productType":"Running Shoes",
-        "price":"60",
+        "title": "Portatil HP",
+        "productType":"Portatil HP 14Pulg 1tb",
+        "price":"3000000",
         "rating":4,
-        "image":"https://brand.assets.adidas.com/image/upload/f_auto,fl_lossy,q_1/esCO/Images/originals_ss19_yung96_april_tease_clp_item_brown_woutbg_dt_tcm195-334931.png",
-        "description":"Adidas run serie format slow, geniales para aquellos que desean recorrer distancias largas"
+        "image":"https://www.ktronix.com/medias/193905919703-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyMzUwMTN8aW1hZ2UvcG5nfGltYWdlcy9oODMvaDI0LzkyMDE4NDg2NDc3MTAucG5nfDdiMzE2ODEwZjdmNGI2OTMyZDZlMTM4MWZkMjQxZDY2ZDk2ZDYwMzRjZDNiZTVhMjAxOWQzY2FhY2QwMDY5ZTA",
+        "description":"Portatil HP 14 pulgadas y un terabyte de disco duro, ideal para alto trafico de datos"
     },
     {
         "id":3,
         "title": "Smart TV",
-        "productType":"Televisor unico",
-        "price":"10",
+        "productType":"Televisor LG Smartv",
+        "price":"2500000",
         "rating":5,
         "image":"https://hogarymoda.com.co/wp-content/uploads/2020/09/CX50S1USM_1-300x300.png",
         "description":"Televisor bonito que estara en la habitacion de Lorenzo y vera ahi avengers"
@@ -30,36 +30,36 @@
         "id":4,
         "title": "shoes",
         "productType":"Running Shoes",
-        "price":"50",
+        "price":"150000",
         "rating":3,
         "image":"https://brand.assets.adidas.com/image/upload/f_auto,fl_lossy,q_1/esCO/Images/originals_ss19_yung96_april_tease_clp_item_brown_woutbg_dt_tcm195-334931.png",
         "description":"Adidas run serie format slow, geniales para aquellos que desean recorrer distancias largas"
     },
     {
         "id":5,
-        "title": "Smart TV",
-        "productType":"Televisor unico",
-        "price":"10",
-        "rating":5,
-        "image":"https://hogarymoda.com.co/wp-content/uploads/2020/09/CX50S1USM_1-300x300.png",
-        "description":"Televisor bonito que estara en la habitacion de Lorenzo y vera ahi avengers"
+        "title": "Bite dog",
+        "productType":"Juguete de perro",
+        "price":"35000",
+        "rating":3,
+        "image":"https://http2.mlstatic.com/D_NQ_NP_912840-MCO32737365262_112019-V.jpg",
+        "description":"Juguete ideal para perros que son fastidiosos"
     },
     {
         "id":6,
-        "title": "shoes",
-        "productType":"Running Shoes",
-        "price":"50",
+        "title": "Rollers",
+        "productType":"Patines barbie",
+        "price":"70000",
         "rating":3,
-        "image":"https://brand.assets.adidas.com/image/upload/f_auto,fl_lossy,q_1/esCO/Images/originals_ss19_yung96_april_tease_clp_item_brown_woutbg_dt_tcm195-334931.png",
-        "description":"Adidas run serie format slow, geniales para aquellos que desean recorrer distancias largas"
+        "image":"https://simaro.co/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/P/l/PlayWheels-Disney-Princess-Patines-para-nios-tamao-junior-6-12-con-rodilleras---Color-real-dar.png",
+        "description":"Patines Barbie ideales para regalo de navidad"
     },
     {
         "id":7,
-        "title": "shoes",
-        "productType":"Running Shoes",
-        "price":"50",
-        "rating":3,
-        "image":"https://brand.assets.adidas.com/image/upload/f_auto,fl_lossy,q_1/esCO/Images/originals_ss19_yung96_april_tease_clp_item_brown_woutbg_dt_tcm195-334931.png",
-        "description":"Adidas run serie format slow, geniales para aquellos que desean recorrer distancias largas"
+        "title": "Play Station",
+        "productType":"Play Station 5",
+        "price":"2500000",
+        "rating":5,
+        "image":"https://gamingstorelatam.com/wp-content/uploads/2017/12/console-playstation5.png",
+        "description":"Largas noches de trasnocho desde que tengas esta nueva consola de videojuegos"
     }
 ]
