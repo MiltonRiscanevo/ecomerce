@@ -1,5 +1,3 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -39,7 +37,7 @@ const styles= makeStyles({
         height:"100%"
     },
     button:{
-        width:"50%",
+        width:"70%",
         height:"100%", 
         paddingTop:10,
         paddingBottom:10,
