@@ -71,6 +71,9 @@ export default function Products({
           height="194"
           image={image}
           alt="Nike Shoes"
+          style={{
+            objectFit:"contain"
+          }}
           />
 
           <CardContent  >
