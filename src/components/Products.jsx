@@ -53,7 +53,7 @@ export default function Products({
   return (
     
 
-          <Card sx={{ maxWidth: 345, margin: 1, minHeight: 350}} key={id} >
+          <Card sx={{ maxWidth: 345, margin: 1, minHeight: 345}} key={id} >
           <CardHeader
             action={
            <Typography
@@ -68,9 +68,9 @@ export default function Products({
           />
           <CardMedia
           component="img"
-          height="194"
+          height="180"
           image={image}
-          alt="Nike Shoes"
+          alt="images_products"
           style={{
             objectFit:"contain"
           }}
