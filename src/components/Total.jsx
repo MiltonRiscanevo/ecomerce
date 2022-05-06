@@ -1,6 +1,6 @@
 import React from 'react'
 import Accounting from 'accounting'
-import {Button, makeStyles} from '@material-ui/core'
+import { makeStyles} from '@material-ui/core'
 import {useStateValue} from './StateProvider'
 import { Link } from 'react-router-dom'
 
@@ -13,7 +13,13 @@ const useStyles = makeStyles({
         height:'20vh'
     },
     button:{
-        marginTop:'2rem'
+        marginTop:'2rem',
+        textDecoration:'none',
+        backgroundColor:'#D72701',
+        fontSize: '20px',
+        color:"white",
+        padding:'10px',
+        borderRadius:'30px'
     }
 })
 
@@ -28,7 +34,7 @@ const Total = () => {
             <h5>Total items</h5>
             <h5>{Accounting.formatMoney(TotalPayment)}</h5>
             <Link to="/checkout">
-                <Button className={classes.button} variant='contained' color='secondary' >Check out</Button>
+                <button className={classes.button} >Check out</button>
             </Link>           
         </div>
     )

@@ -67,11 +67,12 @@ export default function CheckOutCard({
            title= {title}
            subheader="In stock"
           />
-          <CardMedia
+          <img
           component="img"
           height="194"
-          image={image}
-          alt="Nike Shoes"
+          src={image}
+          alt=""
+          style={{objectFit:'contain'}}
           />
           <CardActions disableSpacing className={classes.container}>
               <div className={classes.rating}>

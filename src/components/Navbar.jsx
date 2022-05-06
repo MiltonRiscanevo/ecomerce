@@ -1,16 +1,13 @@
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Logo2 from './images/Logo2.JPG'
 import {makeStyles} from '@material-ui/core'
 import ShoppingCart from '@mui/icons-material/ShoppingCart';
 import Badge from '@mui/material/Badge';
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import {useStateValue} from './StateProvider'
 import { auth } from '../firebase';
 import { actionTypes } from '../reducer';
-import { useNavigate } from 'react-router-dom';
 
 const styles= makeStyles(theme=>({
     root:{
