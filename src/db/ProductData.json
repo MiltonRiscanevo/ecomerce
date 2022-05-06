@@ -47,20 +47,20 @@
     },
     {
         "id":6,
-        "title": "Rollers",
-        "productType":"Patines barbie",
-        "price":"70000",
+        "title": "Papas fritas",
+        "productType":"Paquetes",
+        "price":"1500",
         "rating":3,
-        "image":"https://simaro.co/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/P/l/PlayWheels-Disney-Princess-Patines-para-nios-tamao-junior-6-12-con-rodilleras---Color-real-dar.png",
-        "description":"Patines Barbie ideales para regalo de navidad"
+        "image":"https://www.superricas.com/sites/default/files/2019-04/papas-natural.png",
+        "description":"Papas sabro a pollo"
     },
     {
         "id":7,
-        "title": "Play Station",
-        "productType":"Play Station 5",
-        "price":"2500000",
+        "title": "Mani Moto Picante",
+        "productType":"Paquetes",
+        "price":"1700",
         "rating":5,
-        "image":"https://gamingstorelatam.com/wp-content/uploads/2017/12/console-playstation5.png",
-        "description":"Largas noches de trasnocho desde que tengas esta nueva consola de videojuegos"
+        "image":"https://www.larebajavirtual.com/images/productos/sii/F/300x300/mani_moto_inferno-115198-1613828415.png",
+        "description":"Un pasaboca ideal para un buen licor"
     }
 ]
